@@ -39,6 +39,8 @@ file_paths = []
 
 def getFilePath(root_path):
     for lists in os.listdir(root_path):
+        if lists == '.git':
+            continue
         the_path = os.path.join(root_path, lists)
         if os.path.isdir(the_path):
             getFilePath(the_path)
