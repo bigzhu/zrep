@@ -39,7 +39,7 @@ file_paths = []
 
 def getFilePath(root_path):
     for lists in os.listdir(root_path):
-        if lists == '.git':
+        if lists in ('.git', 'node_modules'):
             continue
         the_path = os.path.join(root_path, lists)
         if os.path.isdir(the_path):
