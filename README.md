@@ -25,7 +25,7 @@ sed 有些反人类,看看这个
 install
 ==
 
-    sudo ./install.sh
+    install.sh replace.py
 
 使用
 ==
