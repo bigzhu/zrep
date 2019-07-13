@@ -14,23 +14,23 @@ def check(open_file, pattern):
 
 def replace(file_path, pattern, subst):
     '''进行替换'''
-    #Create temp file
+    # Create temp file
     old_file = open(file_path)
     if check(old_file, pattern):
-        print '替换: ' + file_path
+        print('替换: ' + file_path)
         old_file.seek(0)
         old_file = open(file_path)
         fh, abs_path = mkstemp()
         new_file = open(abs_path, 'w')
         for line in old_file:
             new_file.write(line.replace(pattern, subst))
-        #close temp file
+        # close temp file
         new_file.close()
         os.close(fh)
         old_file.close()
-        #Remove original file
+        # Remove original file
         os.remove(file_path)
-        #Move new file
+        # Move new file
         move(abs_path, file_path)
 
 
@@ -46,16 +46,18 @@ def getFilePath(root_path):
             getFilePath(the_path)
         else:
             file_paths.append(the_path)
+    return file_paths
+
 
 if __name__ == '__main__':
     if len(sys.argv) == 3:
         pattern = sys.argv[1]
         subst = sys.argv[2]
-        print '%s 将被替换为 %s' % (pattern, subst)
+        print('%s 将被替换为 %s' % (pattern, subst))
         path = os.getcwd()
         getFilePath(path)
         for file_path in file_paths:
             replace(file_path, pattern, subst)
     else:
-        print '需要输入参数:'
-        print 'python %s 待替换字符 替换成这个' % sys.argv[0]
+        print('需要输入参数:')
+        print('python %s 待替换字符 替换成这个' % sys.argv[0])
