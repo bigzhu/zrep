@@ -24,6 +24,7 @@ sed 有些反人类,看看这个
 
 install
 ==
+安装 [bash_tools](https://github.com/bigzhu/bash_tools) 以后, 执行
 
     install.sh replace.py
 
