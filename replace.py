@@ -15,7 +15,7 @@ def check(open_file, pattern):
 def replace(file_path, pattern, subst):
     '''进行替换'''
     # Create temp file
-    old_file = open(file_path)
+    old_file = open(file_path, encoding='ISO-8859-1')
     if check(old_file, pattern):
         print('替换: ' + file_path)
         old_file.seek(0)
