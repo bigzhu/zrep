@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "zrep"
+version = "0.1.1"
+description = "replace tool"
+authors = ["bigzhu <vermiliondun@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+python-magic = "^0.4.27"
+
+[tool.poetry.scripts]
+zrep = "zrep.zrep:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
