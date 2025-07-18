@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "zrep"
-version = "0.2.4"
+version = "0.2.5"
 description = "A user-friendly recursive string replacement tool"
 authors = ["bigzhu <vermiliondun@gmail.com>"]
 readme = "README.md"
