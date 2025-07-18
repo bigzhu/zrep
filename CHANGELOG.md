@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.5] - 2025-01-18
+
+### Changed
+- **Removed Windows support**: Focus on Unix-like systems (Linux, macOS) only
+- Simplified CI/CD workflows by removing Windows-specific complexity
+- Removed python-magic-bin dependency for Windows
+- Streamlined GitHub Actions matrix to ubuntu-latest and macos-latest only
+
+### Rationale
+zrep is primarily designed for Unix/Linux development environments where
+text replacement tools are commonly used. Removing Windows support allows
+for simpler, more reliable CI/CD workflows and reduces maintenance overhead.
+
 ## [0.2.4] - 2025-01-18
 
 ### Fixed
