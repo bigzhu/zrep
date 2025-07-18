@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.4] - 2025-01-18
+
+### Fixed
+- Improved Windows Poetry installation by using pip method instead of snok/install-poetry
+- Use pip install poetry for Windows runners to avoid PATH issues
+- Keep snok/install-poetry for non-Windows platforms (Linux/macOS)
+- Add proper Poetry configuration for Windows environments
+
 ## [0.2.3] - 2025-01-18
 
 ### Fixed
