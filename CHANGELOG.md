@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.2] - 2025-01-18
+
+### Fixed
+- Fix libmagic dependency issue in GitHub Actions CI/CD
+- Add system dependency installation for Ubuntu, macOS, and Windows
+- Add python-magic-bin dependency for Windows support
+- Improve CI/CD reliability across all platforms
+
 ## [0.2.1] - 2025-01-18
 
 ### Added
