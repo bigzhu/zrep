@@ -10,7 +10,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
+        os: [ubuntu-latest, macos-latest]
         python-version: ['3.10', '3.11', '3.12']
         
     steps:
@@ -26,11 +26,6 @@ jobs:
       if: matrix.os == 'macos-latest'
       run: |
         brew install libmagic
-    
-    - name: Install system dependencies (Windows)
-      if: matrix.os == 'windows-latest'
-      run: |
-        echo "Windows dependencies will be handled by python-magic-bin"
     
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v5
