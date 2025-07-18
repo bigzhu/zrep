@@ -1,5 +1,11 @@
 # zrep
 
+[![CI](https://github.com/bigzhu/zrep/workflows/CI/badge.svg)](https://github.com/bigzhu/zrep/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/bigzhu/zrep/workflows/CodeQL/badge.svg)](https://github.com/bigzhu/zrep/actions/workflows/codeql.yml)
+[![Release](https://github.com/bigzhu/zrep/workflows/Release/badge.svg)](https://github.com/bigzhu/zrep/actions/workflows/release.yml)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 z replace, 用于替换文件中的字符串
 
 ## 作用
