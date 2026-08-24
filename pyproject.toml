@@ -28,7 +28,7 @@ python-magic = "^0.4.27"
 pytest = "^9.1.1"
 pytest-cov = "^7.1.0"
 black = "^26.5.1"
-ruff = "^0.15.20"
+ruff = ">=0.15.20,<0.17.0"
 mypy = "^2.1.0"
 
 [tool.poetry.scripts]
